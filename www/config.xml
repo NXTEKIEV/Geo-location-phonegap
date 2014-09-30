@@ -3,15 +3,16 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "nl.nxte.phonegap.geolocation"
+        versionCode = "3"
         version     = "1.0.0">
 
 
-    <!-- <name>Geo Location</name> -->
-    <!-- <description>Geo location - second application for testing Cordowa API for getting geolocation of mobile through own application</description> -->
-    <!-- <author href="nxte.nl" email="info@nxte.nl"> NXTE.NL </author> -->
-    <!-- <icon src="icon.png" gap:role="default" /> -->
+    <name>Geo Location</name>
+    <description>Geo location - second application for testing Cordowa API for getting geolocation of mobile through own application</description>
+    <author href="nxte.nl" email="info@nxte.nl"> NXTE.NL </author>
+    <icon src="icon.png" gap:role="default" />
 
-    <!-- <preference name="phonegap-version" value="3.5.0" /> -->
+    <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="default" />
 
     <feature name="http://api.phonegap.com/1.0/geolocation" />
