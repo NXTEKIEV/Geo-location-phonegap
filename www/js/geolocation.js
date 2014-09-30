@@ -31,7 +31,7 @@ function onError(error) {
 }
 
 function getLocation(){
-  //navigator.geolocation.getCurrentPosition(onSuccess, onError);
-  alert('Get location by onClick button from geolocation.js file');
+  navigator.geolocation.getCurrentPosition(onSuccess, onError);
+  //alert('Get location by onClick button from geolocation.js file');
 
 }
