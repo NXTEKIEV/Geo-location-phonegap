@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Geo Location </title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css">
+    <link rel="stylesheet" type="text/css" href="css/geolocation.css" />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquecorry.mobile.min.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/geolocation.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start page #main -->
+    <div data-role="page" id="main" data-theme="b">
+        <div data-role="header">
+            <h1>Getting Geolocation API Demo #1</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+            <p>Your geo location now is:</p>
+            <div id="geo_loc">...<div>
+            <div data-role="button">Get new coordinates</div>
+            <input type="button" value="Refresh Location" onclick="getLocation();">
+            <button class="ui-btn ui-corner-all" onclick="getLocation();">Button</button>
+        </div><!-- /content  -->
+
+        <div data-role="footer">
+            <h4>Page footer</h4>
+        </div><!-- /footer  -->
+    </div><!-- /page  -->
+
+    <ul data-role="listview" data-insert="true" data-count-theme="b">
+        <li><a href="#main">Main page <span class="ui-li-count">1</span></a></li>
+        <li><a href="#main">Main page <span class="ui-li-count">2</span></a></li>
+        <li><a href="#main">Main page <span class="ui-li-count">3</span></a></li>
+        <li><a href="#main">Main page <span class="ui-li-count">4</span></a></li>
+        <li><a href="#main">Main page <span class="ui-li-count">5</span></a></li>
+    </ul><!-- /menu  -->
+
+</body>
+</html>
