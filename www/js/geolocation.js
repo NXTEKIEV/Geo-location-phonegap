@@ -5,7 +5,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //Cordova is ready
 //
 function onDeviceReady() {
-  alert('onDeviceReady under Cordowa');
+  //alert('onDeviceReady under Cordowa');
   navigator.geolocation.getCurrentPosition(onSuccess, onError);
 }
 
