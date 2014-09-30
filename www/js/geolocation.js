@@ -5,6 +5,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //Cordova is ready
 //
 function onDeviceReady() {
+  alert('onDeviceReady under Cordowa');
   navigator.geolocation.getCurrentPosition(onSuccess, onError);
 }
 
@@ -29,7 +30,8 @@ function onError(error) {
   'message: ' + error.message + '\n');
 }
 
-function getlocation(){
-  navigator.geolocation.getCurrentPosition(onSuccess, onError);
+function getLocation(){
+  //navigator.geolocation.getCurrentPosition(onSuccess, onError);
+  alert('Get location by onClick button from geolocation.js file');
 
 }

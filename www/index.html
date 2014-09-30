@@ -1,64 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title> Geo Location </title>
+    <title>Geo Location</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/geolocation.css" />
 
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css">
-    <link rel="stylesheet" type="text/css" href="css/geolocation.css" />
+    <!-- <link rel="stylesheet" href="css/jquery.mobile.min.css" /> -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/jquery.mobile.min.js"></script> -->
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $(document).on("mobileinit", function(){
+            /*
+            apply overrides here
+            example:
+            $.mobile.activeBtnClass = "my-class";
+            */
+            $.mobile.defaultPageTransition = "slide";
+            $.mobile.buttonMarkup.hoverDelay = 100;
+            $.mobile.pageLoadErrorMessage = "Could not load page";
+            alert('onmobileinit 1.4.4 under jquery-mobile');
+        });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+
+
+
     <script type="text/javascript" src="js/geolocation.js"></script>
-
+    <!--<script type="text/javascript" src="phonegap.js"></script>-->
 </head>
-
 <body>
-   <ul data-role="listview" data-inset="true" data-count-theme="a">
-        <li><a href="#main">Main page <span class="ui-li-count">1</span></a></li>
-        <li><a href="#second">Main page <span class="ui-li-count">2</span></a></li>
+<section data-role="page" id="home" data-theme="a">
+    <header data-role="header">
+        <h1>Get current geo location</h1>
+    </header><!-- /header -->
+    <article role="main" class="ui-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+        <br>
+        <hr>
+        <p id="geo_loc">...</p>
+        <hr>
+        <br>
+        <a href="#" class="ui-btn" onclick="getLocation();">Reload Coodinates</a>
 
-    </ul><!-- /menu  -->
-
-    <!-- Start page #main -->
-    <div data-role="page" id="main" data-add-back-btn="false" data-theme="b">
-
-        <div data-role="header">
-
-            <h1>Getting Geolocation API Demo #1</h1>
-        </div><!-- /header -->
-
-        <div data-role="content">
-            <p>Your geo location now is:</p>
-            <div id="geo_loc">...<div>
-                <p></p>
-            <div data-role="button">Get new coordinates</div>
-            <input type="button" value="Refresh Location" onclick="getLocation();">
-            <button class="ui-btn ui-corner-all" onclick="getLocation();">Button</button>
-        </div><!-- /content  -->
-
-        <div data-role="footer">
-            <h4>Page footer</h4>
-        </div><!-- /footer  -->
-    </div><!-- /page  -->
-
-
-    <div data-role="page" id="second" data-add-back-btn="true" data-theme="b">
-        <div data-role="header" id="header">
-            <h1>Second page jQuery Mobile</h1>
-        </div>
-        <div data-role="content">
-            <p>Example multy pages application</p>
-        </div>
-        <div data-role="footer">
-            <h4>Copyright (c)</h4>
-        </div>
-    </div>
-
-
-
-
-
+    </article><!-- /content -->
+    <footer data-role="footer">
+        <h4>Page footer</h4>
+    </footer><!-- /footer -->
+</section><!-- /page -->
 
 </body>
 </html>

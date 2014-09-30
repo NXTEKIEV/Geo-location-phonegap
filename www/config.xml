@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "nl.nxte.phonegap.geolocation">
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "nl.nxte.phonegap.geolocation"
+        versionCode = "3"
+        version     = "1.0.0">
 
 
     <name>Geo Location</name>
@@ -11,7 +13,10 @@
     <icon src="icon.png" gap:role="default" />
 
 
-      <feature name="http://api.phonegap.com/1.0/geolocation" />
+    <!--      <feature name="http://api.phonegap.com/1.0/geolocation" /> -->
+    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="orientation" value="landscape" />
+
 
 
 </widget>
